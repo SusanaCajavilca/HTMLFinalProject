@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Page: The Talkboy</title>
+    <!-- The Talkboy was in the movie Home Alone 2 -->
+    <meta name="description" content="This page is the Product Page for the Final Project.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Here I put the Google Fonts: I choose Bungee Inline, Bungee Shade and Roboto -->
+    <!--  The Bungee font has a 'retro' style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- jQuery link This must be placed before the link to our custom js ... https://releases.jquery.com/ -->
+    <!-- making sure of using the latest version , in this case 3.7.0-->
+    <!-- minified is more efficient and faster, no wide space-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- add our custom js file -->
+    <script type="text/javascript" src="./js/custom-js.js"></script>
+    <!-- Here I add the CSS file, there is only one css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="Index3Body">
+<header id="header"></header>
+<div class="Division">
+<main>
+    <section>
+        <h1>THE TALKBOY</h1>
+    </section>
+    <section>
+        <div class="imageContainer">
+        <!-- This div will contain 1 image -->
+        <img id="mainImage" src="./img/Talkboy_1.jpg" alt="Talkboy Image 1">
+            <!-- With a function with jQuery , the user can change the image by clicking the button in the next div-->
+            <!--the files are named: Talkboy_1.jpg, Talkboy_2.jpg, Talkboy_3.jpg,Talkboy_4.jpg, Talkboy_5.jpg, Talkboy_6.jpg -->
+        </div>
+        <div>
+        <!-- This button is to change the image -->
+             <button id="changeButton">Change Picture</button>
+        </div>
+        </section>
+        <section>
+         <!-- Here I put an id because I will use a jquery function, please check it out  -->
+         <h2 id="tored2">PRICE: 100 CAD</h2>
+         <p>Low in stock, only few articles left due to the high-demand. We advise you to purchase it immediately!!!!</p>
+         <h2>Product Description</h2>
+         <p>From the movie Home Alone 2. Have loads of 90s styled high-tech fun with the Talkboy tape recorder. Easy to use, funny to play. Armed with a blank cassette and the speed recorder setting that lets you change your voice, you’ll be able to pull off all kinds of pranks on friends and family.</p>
+         <h2>Specifications:</h2>
+         <p>1st Generation. Cassette Tape type. Color Silver-Black. Battery Powered. Features include Belt Drive, Cassette Tape, Headphone Jack. With an integrated monophonic speaker, grip handle, and an extendable microphone.</p>
+         <h2>Sizes / Dimensions:</h2>
+         <p>Length: 20cm x Height: 22 cm x Width: 7 cm</p>
+         <h2>Weight:</h2>
+         <p>0.5 kilograms</p>
+         <h2>Material:</h2>
+         <p>Plastic, polymers and metal. All materials were tested and proven to be safe for human handling.</p>
+         <h2>Batteries needed:</h2>
+         <p>4 batteries AA/ LR6 (batteries are not included). Do not mix old and new batteries. Do not mix alkaline, standard or rechargeable batteries</p>
+         <h2>Additional information:</h2>
+         <p>Tested and revised. 90-DAY LIMITED WARRANTY: Tiger Electronics,Ltd. warrants to the original consumer purchaser of this product that the product will be free from defects in materials or workmanship for 90 days from the date of original purchase.</p>
+         <!-- Here I put the Button to buy the product-->
+         <div class="checkitout"><a href="#" class="button-1">CHECK IT OUT!</a></div>
+    </section>
+</main>
+<aside>
+    <!-- In the aside I put content related to the Talkboy, but this content is not related to the buying process-->
+    <!-- Since this page is about selling the Talkboy, I did not put another product that may distract the user-->
+        <article>
+            <!-- Here I put a preview image -->
+            <img src="./img/Review_Image.jpg" alt="Reviews">
+            <h4>Watch reviews of the Talkboy</h4>
+            <!-- Here I put the Button to see the content-->
+            <!-- The Button is a real link to a YouTube video, please check it out-->
+            <a href="https://www.youtube.com/watch?v=U2OSbJKzcUE" target = "_blank" class="button-2">Click!</a>
+        </article>
+        <article>
+            <!-- Here I put a preview image -->
+            <img src="./img/Unboxing_Image.jpg" alt="Unboxing">
+            <h4>Watch unboxing of the Talkboy</h4>
+            <!-- Here I put the Button to see the content-->
+            <!-- The Button is a real link to a YouTube video, please check it out-->
+            <a href="https://www.youtube.com/watch?v=wBoKgQxB7Vk" target = "_blank" class="button-2">Click!</a>
+       </article>
+       <article>
+           <!-- Here I put a preview image -->
+        <img src="./img/TalkvsWalk_Image.jpg" alt="TalkvsWalk">
+        <h4>Talkboy vs Walkman: Which wins?</h4>
+           <!-- Here I put the Button to see the content-->
+           <!-- The Button is a real link to a Yahoo article, please check it out-->
+        <a href="https://finance.yahoo.com/news/old-obsolete-tech-products-actually-215504496.html" target = "_blank" class="button-2">Click!</a>
+       </article>
+       <article>
+           <!-- Here I put a preview image -->
+        <img src="./img/Listening_Image.jpg" alt="Listen">
+        <h4>Listen The Talkboy recording</h4>
+           <!-- Here I put the Button to see the content-->
+           <!-- The Button is a real link to a YouTube video, please check it out-->
+        <a href="https://www.youtube.com/watch?v=CfkkkSpTlTQ" target = "_blank" class="button-2">Click!</a>
+      </article>
+      <article>
+        <img src="./img/Manual_Image.jpg" alt="Talkboy manual">
+        <h4>Read the manual</h4>
+        <!-- Here I put the Button to read the pdf manual-->
+        <a href="./pdf/Talkboy_manual.pdf" target = "_blank" class="button-2">Click!</a>
+      </article>
+</aside>
+</div>
+<footer id="footer"></footer>
+</body>
+</html>

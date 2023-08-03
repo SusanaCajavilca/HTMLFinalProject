@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Page: The Talkboy</title>
+    <!-- Hasbro is an American multinational conglomerate holding company -->
+    <meta name="description" content="This page is the Contact Page for the Final Project.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Here I put the Google Fonts: I choose Bungee Inline, Bungee Shade and Roboto -->
+    <!--  The Bungee font has a 'retro' style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- jQuery link This must be placed before the link to our custom js ... https://releases.jquery.com/ -->
+    <!-- making sure of using the latest version , in this case 3.7.0-->
+    <!-- minified is more efficient and faster, no wide space-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- add our custom js file -->
+    <script type="text/javascript" src="./js/custom-js.js"></script>
+    <!-- Here I add the CSS file, there is only one css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="Index4Body">
+<header id="header"></header>
+<main>
+    <section>
+     <h1>We are here for you:&nbsp;Contact Our Support Team directly</h1> <!-- I used this command "&nbsp;" to add a space inside the text-->
+    </section>
+    <section class="ContactUss">
+    <div>
+    <!-- Here I put the form, with the 2 main attributes: method and action -->
+    <form class="form" method="POST" action="somefile.php" enctype="multipart/form-data">
+        <section>
+            <p>
+            <label>Your Name:</label>
+            <input type="text" name="Name" placeholder="(Required)" required>
+            </p>
+            <p>
+            <label>Your Email:</label>
+            <input type="email" name="Email" placeholder="(Required)" required>
+            </p>
+            <p>
+            <label>Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="705-123-4567">
+            </p>
+            <p>
+            <label>Your Province:</label>
+            <input type="text" name="Province" placeholder="(Required)" required>
+            </p>
+            <p>
+            <label>Your City:</label>
+            <input type="text" name="City" placeholder="(Required)" required>
+            </p>
+            <p>
+            <label>Your Message:</label>
+            <textarea name="message" rows="15" cols="50" placeholder="Please, leave us a message"></textarea>
+            </p>
+            <p>
+            <input type="reset" value="Reset">
+            </p>
+            <p>
+            <input type="submit" value="Send">
+            </p>
+        </section>
+    </form>
+    </div>
+    <div>
+        <img src="./img/Contact_Us.jpg" alt="Contact Us Image">
+    </div>
+    </section>
+    <section class="Hasbro">
+      <!-- Here I put the information about the company. Since Tigers merged with Hasbro, I put Hasbro info -->
+     <h2>Hasbro Company Information</h2>
+      <p>Address: 1027 Newport Ave, Pawtucket, Rhode Island, 02861, United States</p>
+      <p>Phone number and extensions: 1-866-278-4264 - Monday through Friday: 8:00am to 7:00pm ET, Saturday: 8:30am to 5:00pm ET.</p>
+      <p>Sales Team Email: CustomerService@HasbroPulse.com</p>
+      <p>Look for us in social media:</p>
+      <div>
+          <nav>
+                  <!-- Here I put the Navigation Group of Links to the two social media pages: Facebook and Instagram-->
+                  <a href="https://www.facebook.com/Hasbro/?locale=es_LA"><img src="./img/Facebook_LogoCircle.png" alt="Facebook Logo"></a>
+                  <a href="https://www.instagram.com/hasbro/"><img src="./img/Instagram_LogoCircle.png" alt="Instagram Logo"></a>
+                  <!-- I did not include twitter since Elon Musk ruined it-->
+          </nav>
+      </div>
+    </section>
+</main>
+<footer id="footer"></footer>
+</body>
+</html>

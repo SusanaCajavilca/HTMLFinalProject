@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page: The Talkboy</title>
+    <!-- The Talkboy was a USA product that was in the market from 1992 to 1999-->
+    <!-- The Talkboy is now considered a vintage collection product -->
+    <meta name="description" content="This page is the Home Page for the Final Project.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Here I put the Google Fonts: I choose Bungee Inline, Bungee Shade and Roboto -->
+    <!--  The Bungee font has a 'retro' style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- jQuery link This must be placed before the link to our custom js ... https://releases.jquery.com/ -->
+    <!-- making sure of using the latest version , in this case 3.7.0-->
+    <!-- minified is more efficient and faster, no wide space-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- add our custom js file -->
+    <script type="text/javascript" src="./js/custom-js.js"></script>
+    <!-- Here I add the CSS file, there is only one css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="IndexBody">
+<header id="header"></header>
+<main>
+    <section>
+        <!-- Here I put a video-->
+        <!-- This 1-minute video is an extract from Home Alone 2, it shows how Kevin uses the Talkboy-->
+        <video autoplay muted controls loop>
+            <!-- Using the loop, the video will keep playing forever-->
+            <source src="./vids/Home_Alone.mp4" type="video/mp4">
+            Your browser does not support the video
+            <!-- Copyright: 20th Century Fox - source: https://www.youtube.com/watch?v=IgUQHVlH9QU  -->
+        </video>
+
+    </section>
+    <section>
+        <h1>The Talkboy</h1>
+    </section>
+    <section class="Intro">
+        <!-- Inside I am using a span class called "special-text" to highlight the Words "The Talkboy"-->
+        <p>Remember how was life in the 90's? Everything seemed so easy and relaxed; we were happy, and we knew it. Being fashionable was wearing jeans and sneakers. After school, we used to hang out with our friends. Movie stars were our heroes. Our favourite music was always played in the background. Music was played by cassettes and CDs. Computers were heavy blocks. Internet was still a new thing that very few people were interested in. Our lives were like the movies...  </p>
+        <p>Talking about movies, do you remember Home Alone 2? How can we forget when Kevin, a clever child, outsmarted a group of adults, including his own family. But he didn't make it alone. Besides his brains, he had the help of technology. What did he use? He used <span class="special-text">a Talkboy!!!</span></p>
+        <p>Brought to you from the movies, <span class="special-text">the Talkboy</span> is an excellent device that opens the door that connects fantasy with reality. With a Talkboy, you can record, distort and play your voice or any voice you want, any time you want. You can play a prank to your peers, and feel again like a child for a few seconds. Because to remember is to live again... </p>
+
+    </section>
+    <section>
+        <!-- Here I put a GIF image of The Talkboy-->
+        <img id="Gifimage" src="./img/Talkboy_Gif.gif" alt="Talkboy GIF">
+        <!-- With a function with jQuery , the user can change the image by hovering the gif, please check it out-->
+    </section>
+    <section class="Images1">
+        <!-- Here I put a serie of  4 images of talkboys - Andy Warhol style-->
+        <img src="./img/Talkboy2_redbackground.jpg" alt="Talkboy red">
+        <img src="./img/Talkboy2_bluebackground.jpg" alt="Talkboy blue">
+        <img src="./img/Talkboy2_greenbackground.jpg" alt="Talkboy green">
+        <img src="./img/Talkboy2_yellowbackground.jpg" alt="Talkboy yellow">
+    </section>
+    <section class="Kids">
+        <!-- Here I put 2 images of kids with talkboys -->
+        <img src="./img/Talkboy_and_Kevin.jpeg" alt="Talkboy and Kevin">
+        <img src="./img/Talkboy_kid2.jpg" alt="Talkboy and kid">
+    </section>
+    <section class="Images2">
+        <!-- Here I put a second serie of  4 images of talkboys - Andy Warhol style -->
+        <img src="./img/Talkboy2_orangebackground.jpg" alt="Talkboy orange">
+        <img src="./img/Talkboy2_lightgreenbackground.jpg" alt="Talkboy light green">
+        <img src="./img/Talkboy2_purplebackground.jpg" alt="Talkboy purple">
+        <img src="./img/Talkboy2_cyanbackground.jpg" alt="Talkboy cyan">
+    </section>
+    <section>
+        <!-- Here I put a second video-->
+        <!-- This 30 -seconds video is advertisement for the Talkboy, it has a vintage style... because it was made before 1993-->
+        <video autoplay muted controls loop>
+            <!-- Using the loop, the video will keep playing forever-->
+            <source src="./vids/The_Talkboy.mp4" type="video/mp4">
+            Your browser does not support the video
+            <!-- Copyright: Tiger Electronics - source: https://www.youtube.com/watch?v=UFNpGscz3OQ  -->
+        </video>
+    </section>
+</main>
+<footer id="footer"></footer>
+</body>
+</html>

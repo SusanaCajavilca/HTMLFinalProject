@@ -1,0 +1,1072 @@
+/******************************************************/
+/************** Global Styling for my 4 Pages**********/
+/******************************************************/
+
+/* Quick summary*/
+
+/*My approach was to design a  colorful retro-style website that grabs the attention */
+/*I did not want a boring-serious-corporation-like design since the product is a toy */
+/*However, the design is not chaotic, all the data is ordered sequentially, clearly readable*/
+/*The header and footer are the same in all pages, so the website has a proper order*/
+
+/*Colors*/
+/* The main palette of color I use has this colors*/
+/* Main Colors according to a 'retro' style*/
+/* Strong purple: 6527BE or rgb(101, 39, 190) */
+/* Soft purple: 9681EB or rgb(150, 129, 235) */
+/* Strong cyan:45CFDD or rgb(69, 207, 221)  */
+/* Soft cyan: A7EDE7 or rgb(167, 237, 231) */
+/* Soft yellow: #FFF791 */
+/* Soft pink: #f2dcd0 */
+/* Of course, I will be using another colors too, but the mentioned before are the main ones */
+
+/*Styling*/
+/*First is the code for the global header and footer - starts in line:31 */
+/*Then, is the code for Home Page, using class="IndexBody" - starts in line:107 */
+/*Then, is the code for About Page, using class="Index2Body" - starts in line:162 */
+/*Then, is the code for Product Page, using class="Index3Body" - starts in line:251 */
+/*Then, is the code for Contact Page, using class="Index4Body" - starts in line:367 */
+
+/***************************************************/
+/* Working in the global header  */
+header {
+    height: 125px;
+    width: auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #6527be; /* Using a Strong purple*/
+}
+
+header > div{
+    width: auto;
+    height: 100px;
+    flex-grow: 1;  /*Putting the navigation menu on the right side*/
+}
+
+header >div> a > img{
+    width: auto;
+    height: 100%;
+}
+
+header > nav > menu{
+    display: flex;
+    list-style: none; /*Removing the dots of the navigation menu*/
+
+}
+header > nav > menu > li {
+    padding: 0px 10px;  /*Setting the padding of the navigation menu*/
+}
+
+header > nav > menu > li>a {
+    color: #f4f4f4;   /*Using a nice white for the navigation menu*/
+    font-size: 18px;
+}
+
+/****************************************/
+/* Working in the global footer  */
+
+footer{
+    display: flex;    /*Setting  the footer*/
+    align-items: center;
+    background-color:#9681EB;  /* Using a Soft purple*/
+    color:#0e0e0e;  /*Using a nice black for the text*/
+}
+
+footer div{
+    padding: 5px; /*Setting  the div inside the footer */
+}
+
+footer div:nth-child(1),
+footer div:nth-child(2),
+footer div:nth-child(3){
+    height: 150px;   /*Setting  the height of the footer*/
+    width: auto;
+}
+
+footer div:nth-child(1) img,
+footer div:nth-child(3) img{
+    width: auto;      /*Adjusting the two images of the footer*/
+    height: 100%;
+}
+footer div:nth-child(3){
+    margin-left: auto;  /*With this I move the Hasbro Logo to the right corner*/
+
+}
+
+footer div:nth-child(2) p{
+    padding-top: 50px;  /*With this I move the text a little to the center of the footer*/
+}
+
+footer div:nth-child(3) img {
+    padding-right: 10px; /*With this I adjust a little the space between the logo and the right side*/
+}
+
+
+/****************************************/
+/* Working in the Home Page  */
+
+.IndexBody {
+    margin:0px; /*This value goes for default */
+    background-color: #FFF791;
+}
+
+.IndexBody h1 {
+    font-family: 'Bungee Shade', sans-serif;  /* setting general text properties */
+    text-decoration: none;
+    font-size: 90px;
+    background-color: #45CFDD;
+    text-align: center;
+}
+
+.IndexBody p,
+.IndexBody a,
+.IndexBody li {
+    font-family: 'Roboto', sans-serif;  /* setting more general text properties */
+    text-decoration: none;
+}
+
+.Intro {   /* This only applies to the text- 3 paragraphs  */
+    font-size: 25px;
+    padding: 2%;
+}
+
+.special-text{  /* This only applies to the words "The Talkboy" inside  the 3 paragraphs  */
+    font-family: 'Bungee Inline', sans-serif;
+    background-color: #45CFDD;
+}
+
+
+.IndexBody > main> section:first-child{
+    display: flex;   /*Putting the video in the center*/
+    padding-top: 2%;
+    justify-content: center; /*Putting the video in the center*/
+}
+
+.IndexBody > main> section:nth-child(4),
+.IndexBody > main> section:nth-child(5),
+.IndexBody > main> section:nth-child(6),
+.IndexBody > main> section:nth-child(7),
+.IndexBody > main> section:nth-child(8){
+    display: flex;   /*Putting the elements in the center*/
+    padding: 1%;
+    justify-content: center;  /*Putting the elements in the center*/
+}
+
+.IndexBody > main> section:nth-child(8)>video{
+width:65%;  /*Increasing the size of the second video*/
+height: auto;
+}
+
+/****************************************/
+/* Working in the About Page  */
+
+.Index2Body{
+    margin:0px;
+    background-color:#f2dcd0;
+}
+
+.Index2Body h1 {
+    font-family: 'Bungee Shade', sans-serif;  /* setting general text properties */
+    text-decoration: none;
+    font-size: 80px;
+    background-color: #45CFDD;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.Index2Body h2 {
+    font-family: 'Bungee Inline', sans-serif;  /* setting general text properties */
+    text-decoration: none;
+    font-size: 50px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.Index2Body h3 {
+    font-family: 'Bungee Inline', sans-serif;  /* setting general text properties */
+    text-decoration: none;
+    font-size: 30px;
+    background-color: mediumseagreen;
+    text-align: center;
+}
+
+.Index2Body p,
+.Index2Body a,
+.Index2Body li {
+    font-family: 'Roboto', sans-serif;  /* setting more general text properties */
+    text-decoration: none;
+}
+.Index2Body > main> section:nth-child(1){
+    background-image:url("../img/Toys_Backgroud_image.jpg"); /*With this I put a background image */
+    background-color: rgba(0,0,0,.5); /*Setting the opaque tone */
+    background-size: cover;
+    display: flex;
+    align-items: center;  /*Over the background I put the 2 logos in the center */
+    justify-content: center; /*Over the background I put the 2 logos in the center */
+}
+
+.Index2Body > main> section:nth-child(2)>p,
+.Index2Body > main> section:nth-child(4)>p{
+    text-align: center;
+    justify-content: center;  /*Putting the elements in the center*/
+    font-size: 25px;
+}
+
+.Index2Body > main> section:nth-child(2)>div{
+    text-align: center;
+    justify-content: center;  /*Putting the 2 images in the center*/
+}
+.Index2Body > main> section:nth-child(3){
+    text-align: center;
+    justify-content: center;  /*Putting the video in the center*/
+}
+
+.Index2Body > main> section:nth-child(3)>video{
+    padding-top: 1%;
+    width:65%;  /*Increasing the size of the second video*/
+    height: auto;
+}
+
+.Index2Body > main> section:nth-child(5)>p,
+.Index2Body > main> section:nth-child(6)>p{
+    padding-left: 1%;     /*Setting the 'Our History' and 'Representative Products' paragraphs*/
+    padding-right: 1%;
+    text-align: justify;   /*Justifying the text*/
+    justify-content: center;  /*Putting text in the center*/
+    font-size: 19px;
+}
+.special-text2{
+    font-family:'Bungee Inline',sans-serif; /*Highlighting the 3 qualities of Tiger*/
+    color:#f4f4f4;
+    background-color:#6527be ;
+}
+
+.Index2Body > main> section:nth-child(6)>div{
+    text-align: center;   /*Putting the images in the center*/
+    justify-content: center;
+}
+
+/****************************************/
+/* Working in the Product Page  */
+
+.Index3Body {
+    margin:0px;
+}
+.Index3Body h1 {
+    font-family: 'Bungee Shade', sans-serif;  /* setting general text properties */
+    text-decoration: none;
+    font-size: 90px;
+    background-color: #45CFDD;
+    text-align: center;
+}
+
+.Index3Body h2 {
+    font-family: 'Bungee Inline', sans-serif;  /* setting general text properties */
+    text-decoration: none;
+    font-size: 25px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.Index3Body h3 {
+    font-family: 'Bungee Inline', sans-serif;  /* setting general text properties */
+    text-decoration: none;
+    font-size: 20px;
+    background-color: mediumseagreen;
+    text-align: center;
+}
+
+.Index3Body p,
+.Index3Body a,
+.Index3Body li,
+.Index3Body h4 {
+    font-family: 'Roboto', sans-serif; /* setting more general text properties */
+    text-decoration: none;
+}
+
+.Division{
+    display: grid;
+    grid-template-columns: 75% 25%;  /*With this I use 75% for the main part and 25% for the aside*/
+}
+
+.imageContainer > img{
+    height: 650px;    /*Setting the size of the image */
+    width: 950px;
+    border: 2px solid #333;  /*Adding a border to the image */
+}
+
+.imageContainer {
+    display: flex;       /*With this I put the image in the center of the 75%*/
+    justify-content: center;
+    align-items: center;
+}
+
+.button-1{
+    background-color: #6527be;   /*Setting the properties of the Buy it! Button*/
+    border:solid 2px #6527be;
+    color:#f4f4f4;
+    border-radius: 5px;
+    padding:10px 20px;
+}
+
+.button-2{
+    background-color: mediumseagreen; /*Setting the properties of the Click to see! Button*/
+    border:solid 2px mediumseagreen;
+    color:#f4f4f4;
+    border-radius: 5px;
+    padding:10px 20px;
+}
+
+#changeButton{
+    background-color: cyan;   /*Setting the properties of the Change picture Button*/
+    border:solid 2px cyan;
+    color:#0e0e0e; /*using a nice black*/
+    border-radius: 5px;
+    padding:10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+.Division>main>section:nth-child(2)>div:nth-child(2){
+    display: flex;       /*With this I put the button to change image in the center of the 75%*/
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.checkitout{
+    display: flex;       /*With this I put the Buy it! button  in the center of the 75%*/
+    justify-content: center;
+    align-items: center;
+}
+
+.Division>main{
+    background-color:#FFF791; /*using a soft  yellow for the main part*/
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.Division>main>section:nth-child(3){
+    margin-bottom: 2%;  /*adding a little of space below the last section of the main*/
+}
+
+.Division>aside{
+    background-color:#f2dcd0; /*using a soft pink for the aside part*/
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: center;  /*putting the elements on the aside in the center*/
+}
+.Division>aside>article{
+    padding-top: 15%;     /*adding some space in the top and in the bottom of each article*/
+    padding-bottom: 15%;
+
+}
+
+/****************************************/
+/* Working in the Contact Page  */
+
+.Index4Body {
+    margin:0px;
+    background-color: #f2dcd0;  /*using a soft pink*/
+}
+
+.Index4Body h1 {
+    font-family: 'Bungee Shade', sans-serif;  /* setting general text properties */
+    text-decoration: none;
+    font-size: 30px;
+    background-color: #45CFDD;
+    text-align: center;
+}
+
+.Index4Body h2 {
+    font-family: 'Bungee Inline', sans-serif;  /* setting general text properties */
+    text-decoration: none;
+    font-size: 30px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.Index4Body p,
+.Index4Body a,
+.Index4Body li {
+    font-family: 'Roboto', sans-serif;  /* setting more general text properties */
+    text-decoration: none;
+}
+
+label {
+    vertical-align: top; /*With this I put the label at the top of the box (look at the text-box for leaving a message*/
+}
+
+
+.ContactUss{    /*With this divide this section in two equals columns */
+    display: grid;
+    grid-template-columns:50% 50%;  /*One column is for the form and the other is for the image */
+}
+.form{
+    display: grid;  /*Working in the form, I am adjusting in one column */
+    grid-template-columns: max-content auto;
+    grid-gap: 10px;
+    padding-left: 5%;
+}
+
+label {
+    grid-column: 1;  /*First, it goes the labels */
+    align-self: center;
+}
+
+input,
+textarea {
+    grid-column: 2;  /*Second, it goes the input and text-areas */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ContactUss>div>img{
+    width: 80%;     /*With this I adjust the image of the Tel-operator */
+    height: auto;
+}
+
+input[type="reset"],
+input[type="submit"]{
+    height: 40px;      /*With this I adjust the height of the two buttons: reset and submit*/
+    font-size: 20px;  /*With this I change the font size of the two buttons: reset and submit*/
+}
+
+.Hasbro>p{
+    font-size: 20px;
+    padding-left: 0.5%; /*With this I move the paragraph a little bit to right*/
+}
+
+.Hasbro>div>nav>a>img{
+    width: 4%;   /*With this I adjust the images of the 2 icons of social media*/
+    height: auto;
+}
+.Hasbro>div>nav{
+    align-self: center; /*With this I put in the center the images of the 2 icons of social media*/
+    text-align: center;
+    padding-bottom: 1%;
+}
+/******************************************************/
+/************** Responsive Design for my page**********/
+/******************************************************/
+
+/*Responsiveness*/
+
+/* Quick summary*/
+
+/* My "breakpoints" are 1200px, 1024px, 900px, 768px, 600px, 480px, and 320px */
+/*1200px - starts in line:467 */
+/*1024px - starts in line:540 */
+/*900px - starts in line:630 */
+/*768px - starts in line:727 */
+/*600px - starts in line:777 */
+/*480px - starts in line:883 */
+/*320px - starts in line:974*/
+
+@media screen and (max-width: 1200px){ /*1st breakpoint*/
+
+    /*Header and Footer setup*/
+
+    header{
+        background-color: #45CFDD; /*changing the background-color of the header*/
+        height: 125px;
+        width: auto;               /*adjusting the width of the header*/
+    }
+
+    header > nav > menu > li>a {
+        color: #0e0e0e;           /*changing the font-color of the header menu*/
+    }
+
+    /*First, is the code for Home Page, using class="IndexBody"*/
+
+
+    .IndexBody > main> section:first-child>video{
+    display: flex;   /*Putting the video in the center*/
+    padding: 2%;
+    justify-content: center; /*Putting the video in the center*/
+    align-items: center;
+    width: 90%;  /*Adjusting the size of the video */
+    }
+     .Images1{    /*Adjusting the 1st series of 4 images of Talkboys */
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .Images1 img{   /*Adjusting the 1st series of 4 images of Talkboys */
+        max-width: 42%; /* I still want to show the 4 images in this breakpoint*/
+        height: auto;
+    }
+
+    .Images2{     /*Adjusting the 2nd series of 4 images of Talkboys */
+        display: flex; /* I still want to show the 4 images in this breakpoint*/
+        justify-content: center;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .Images2 img{   /*Adjusting the 2nd series of 4 images of Talkboys */
+        max-width: 42%; /* I still want to show the 4 images in this breakpoint*/
+        height: auto;
+    }
+
+    /*Then, is the code for About Page, using class="Index2Body"*/
+
+    /*Nothing to change in this breakpoint*/
+
+    /*Then, is the code for Product Page, using class="Index3Body"*/
+
+    .Division>aside>article{
+        padding-top: 25%;   /*adding more space in the top and bottom of each article in the aside*/
+        padding-bottom: 25%;
+    }
+
+    .Division>aside>article>img{
+        width: 90%;    /*reducing the widht of the images in the aside part*/
+        height: auto;
+    }
+
+    /*Then, is the code for Contact Page, using class="Index4Body"*/
+
+    .ContactUss>div:nth-child(2){
+
+        margin-top: 30px;  /* with this I put the image in the upper middle */
+    }
+
+}
+
+@media screen and (max-width: 1024px){ /*2nd breakpoint*/
+
+    /*Header and Footer setup*/
+
+    header{
+        background-color: #9681EB; /*changing the background-color of the header*/
+        height: 125px;
+        width: auto;               /*adjusting the width of the header*/
+    }
+
+    header > nav > menu > li>a {
+        color: #0e0e0e;           /*changing the font-color of the header menu*/
+    }
+    /*First, is the code for Home Page, using class="IndexBody"*/
+
+    .IndexBody > main> section:first-child>video{
+        display: flex;   /*Putting the video in the center*/
+        padding: 2%;
+        justify-content: center; /*Putting the video in the center*/
+        align-items: center;
+        width: 90%;  /*Adjusting the size of the video */
+    }
+    .Images1{
+        display: flex;    /*Adjusting the 1st series of 4 images of Talkboys */
+        justify-content: center;  /* I still want to show the 4 images in this breakpoint*/
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .Images1 img{
+        max-width: 42%;  /*Adjusting the 1st series of 4 images of Talkboys */
+        height: auto;    /* I still want to show the 4 images in this breakpoint*/
+    }
+
+    .Images2{
+        display: flex;           /*Adjusting the 2nd series of 4 images of Talkboys */
+        justify-content: center;  /* I still want to show the 4 images in this breakpoint*/
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .Images2 img{
+        max-width: 42%;   /*Adjusting the 2nd series of 4 images of Talkboys */
+        height: auto;    /* I still want to show the 4 images in this breakpoint*/
+    }
+
+    .Kids{
+        display: flex;        /*Adjusting the  series of 2 images of Kids */
+        justify-content: center;  /*This was not necessary in the previous breakpoint */
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .Kids img{
+        max-width: 90%;    /*Adjusting the  series of 2 images of Kids */
+        height: auto;
+    }
+
+    /*Then, is the code for About Page, using class="Index2Body"*/
+
+    .Index2Body h1{
+        line-height: 1.5; /* with this I reduce the space between lines of h1*/
+    }
+
+    .Index2Body h2{
+        line-height: 1.5; /* with this I reduce the space between lines of h2*/
+    }
+
+    /*Then, is the code for Product Page, using class="Index3Body"*/
+
+    .imageContainer > img{
+        height: 547px;    /*Setting the size of the image */
+        width: 800px;    /*these two values: 547-800 has a similar ratio with the original 650-950*/
+    }
+
+    /*Then, is the code for Contact Page, using class="Index4Body"*/
+
+    .Index4Body h1{
+        line-height: 1.5; /* with this I reduce the space between lines of h1*/
+    }
+
+    .ContactUss>div:nth-child(2){
+        display: flex;             /*rearranging the image next to the form*/
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 100px;  /* with this I put the image in the upper middle */
+    }
+}
+
+@media screen and (max-width: 900px) {   /*3rd breakpoint*/
+
+    /*Header and Footer setup*/
+
+    header {
+        background-color: #6527be; /*changing the background-color of the header*/
+        height: 125px;
+        width: auto; /*adjusting the width of the header*/
+    }
+
+    header > nav > menu > li > a {
+        color: #f4f4f4; /*changing the font-color of the header menu*/
+    }
+
+    footer {
+
+        background-color: #6527be; /* Using a Strong purple*/
+        color: #f4f4f4; /*Using a nice white for the text*/
+    }
+
+
+    /*First, is the code for Home Page, using class="IndexBody"*/
+
+    .IndexBody > main > section:first-child > video {
+        display: flex; /*Putting the video in the center*/
+        padding: 2%;
+        justify-content: center; /*Putting the video in the center*/
+        align-items: center;
+        width: 90%; /*Adjusting the size of the video */
+    }
+
+    .Images1 {
+        display: flex; /*Adjusting the 1st series of 4 images of Talkboys */
+        justify-content: center; /* I still want to show the 4 images in this breakpoint*/
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .Images1 img {
+        max-width: 42%; /*Adjusting the 1st series of 4 images of Talkboys */
+        height: auto; /* I still want to show the 4 images in this breakpoint*/
+    }
+
+    .Images2 {
+        display: flex; /*Adjusting the 2nd series of 4 images of Talkboys */
+        justify-content: center; /* I still want to show the 4 images in this breakpoint*/
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .Images2 img {
+        max-width: 42%; /*Adjusting the 2nd series of 4 images of Talkboys */
+        height: auto; /* I still want to show the 4 images in this breakpoint*/
+    }
+
+    .Kids {
+        display: flex; /*Adjusting the  series of 2 images of Kids */
+        justify-content: center; /*This was not necessary in the previous breakpoint */
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .Kids img {
+        max-width: 90%; /*Adjusting the  series of 2 images of Kids */
+        height: auto;
+    }
+
+    /*Then, is the code for About Page, using class="Index2Body"*/
+
+    /*Nothing to change in this breakpoint*/
+
+    /*Then, is the code for Product Page, using class="Index3Body"*/
+
+    .Index3Body h1{
+        font-size: 70px; /*reducing the size of h1*/
+    }
+
+    .imageContainer > img{
+        height: 478px;    /*Setting the size of the image */
+        width: 700px;    /*these two values: 478-700  has a similar ratio with the original 650-950*/
+    }
+
+    /*Then, is the code for Contact Page, using class="Index4Body"*/
+
+    .form> section{
+        width: 400px;  /*reducing the width of the section inside the form */
+    }
+
+    .ContactUss>div:nth-child(2){
+        margin-bottom: 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px){   /*4th breakpoint*/
+
+    /*Header and Footer setup*/
+    header{
+        background-color: #45CFDD; /*changing the background-color of the header*/
+        height: 125px;
+        width: auto;               /*adjusting the width of the header*/
+    }
+
+    header > nav > menu > li>a {
+        color: #0e0e0e;           /*changing the font-color of the header menu*/
+    }
+
+    /*First, is the code for Home Page, using class="IndexBody"*/
+
+    /*Nothing to change in this breakpoint*/
+
+    /*Then, is the code for About Page, using class="Index2Body"*/
+
+    .Index2Body h1{
+        font-size: 60px; /*reducing the font-size of h1*/
+    }
+
+    .Index2Body h2{
+        font-size: 40px; /*reducing the font-size of h1*/
+    }
+
+    /*Then, is the code for Product Page, using class="Index3Body"*/
+
+    .Index3Body h1{
+        font-size: 55px; /*reducing the size of h1*/
+    }
+
+    .imageContainer > img{
+        height: 410px;    /*Setting the size of the image */
+        width: 600px;    /*these two values: 410-600  has a similar ratio with the original 650-950*/
+    }
+
+    /*Then, is the code for Contact Page, using class="Index4Body"*/
+
+    .form> section{
+        width: 350px;  /*reducing the width of the section inside the form */
+    }
+
+    .ContactUss>div:nth-child(2){
+        margin-bottom: 250px;
+    }
+
+}
+
+@media screen and (max-width: 600px){   /*5th breakpoint*/
+
+    /*Header and Footer setup*/
+
+    header{
+        background-color: #6527be; /*changing the background-color of the header*/
+        height: 125px;
+        width: 600px;               /*adjusting the width of the header*/
+    }
+
+    header > nav > menu > li > a {
+        color: #f4f4f4; /*changing the font-color of the header menu*/
+    }
+
+    header > div{
+        width: auto;
+        height: 60px; /* reducing the size of the logo icon*/
+    }
+
+    header > nav {
+        margin-right: 40px; /*Moving the navigation menu a little to the left */
+    }
+
+    footer div:nth-child(1),
+    footer div:nth-child(2),
+    footer div:nth-child(3){
+        height: 100px;   /*Setting  the height of the footer*/
+        width: auto;
+    }
+
+    footer div:nth-child(2) p{
+        padding-top: 20px;  /*With this I move the text a little to the center of the footer*/
+    }
+
+    /*First, is the code for Home Page, using class="IndexBody"*/
+
+    .IndexBody h1{
+        line-height: 1.5; /* with this I reduce the space between lines of h1*/
+        margin-bottom: 10px; /* with this I reduce the space between h1 and the Intro text*/
+    }
+
+    .IndexBody > main >section:nth-child(4)>img{
+        width: 250px; /*reducing the size of the gif from 400 to 250 px*/
+        height:auto;
+    }
+
+
+    .Intro>p{
+        margin-left: 10px;
+    }
+    /*Then, is the code for About Page, using class="Index2Body"*/
+
+    .Index2Body h1{
+        font-size: 46px; /*reducing the font-size of h1*/
+    }
+
+    .Index2Body > main> section:nth-child(1)> div:nth-child(1)>img{
+        margin-left: 2%; /*moving a little bit to the left the Tiger Logo*/
+
+    }
+
+    .Index2Body > main> section:nth-child(2)>div>img{
+        width: 80%; /*reducing the image in order to fit in*/
+    }
+    /*Then, is the code for Product Page, using class="Index3Body"*/
+
+    .Index3Body h1{
+        font-size: 50px; /*reducing the size of h1*/
+    }
+
+    .imageContainer > img{
+        height: 342px;    /*Setting the size of the image */
+        width: 500px;    /*these two values: 410-600  has a similar ratio with the original 650-950*/
+    }
+
+    /*Then, is the code for Contact Page, using class="Index4Body"*/
+
+    .Index4Body h1{
+        font-size: 20px;
+    }
+
+    .ContactUss{    /*With this divide this section in one column */
+        display: grid;
+        grid-template-columns:100%;  /*One column for all the elements */
+        justify-self: center;
+    }
+
+    .ContactUss >div:nth-child(2){
+        width: 400px;   /*reducing the size of the image*/
+        height: auto;
+        margin-bottom: 0px;
+        justify-self: center;
+    }
+
+    .ContactUss >div>form>section{
+        display: block;
+        margin-left: 90px;   /*moving the elements of the form the left*/
+    }
+
+    .Hasbro>div>nav>a>img{
+        width: 40px;  /*making a little bit bigger the social media icons*/
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 480px){    /*6th breakpoint*/
+
+    /*Header and Footer setup*/
+    header{
+        /*From this breakpoint until the next one, the menu can no longer be on the right side, it has to on the left, and under the logo*/
+        flex-direction: column; /* Set the flex-direction to column because the screen is little*/
+        align-items: flex-start;
+    }
+
+
+    /*First, is the code for Home Page, using class="IndexBody"*/
+
+    .IndexBody h1{
+        font-size: 70px; /*reducing the fontsize of the h1*/
+        line-height: 1.2;
+    }
+
+    .Intro >p{
+        font-size: 20px; /*reducing the fontsize of the paragraphs of Intro*/
+    }
+
+    .special-text{
+        font-family:'Bungee Inline',sans-serif; /*Highlighting the 3 qualities of Tiger*/
+        font-size: 15px;
+        color:#6527be;
+        background: none; /*no color in the background */
+        line-height: 1; /*changing the inline because the screen is little*/
+    }
+
+    .IndexBody > main >section:nth-child(4)>img{
+        width: 200px; /*reducing the size of the gif from 250 to 200 px*/
+        height:auto;
+    }
+
+    /*Then, is the code for About Page, using class="Index2Body"*/
+
+    .Index2Body>main>section:nth-child(1)>div:nth-child(1)>img{
+        width: 200px; /*reducing the size of the Tiger Logo*/
+        height:auto;
+    }
+
+    .Index2Body>main>section:nth-child(1)>div:nth-child(2)>img{
+        width: 150px;  /*reducing the size of the Hasbro Logo*/
+        height:auto;
+    }
+
+    .brain>img{
+        width: 350px;  /*reducing the size of Brain Warp toy*/
+        height:auto;
+    }
+
+   .special-text2{
+       font-family:'Bungee Inline',sans-serif; /*Highlighting the 3 qualities of Tiger*/
+       font-size: 14px;
+       color:#6527be;
+       background-color:#f2dcd0; /*#f2dcd0 */
+       line-height: 1; /*changing the inline because the screen is little*/
+   }
+
+    /*Then, is the code for Product Page, using class="Index3Body"*/
+
+    /*From this breakpoint until the next one, the aside can no longer be on the right side*/
+
+    .Division{
+        display: grid;
+        grid-template-columns: 100%;  /*With this I put the main and the aside in one column*/
+    }
+
+    .Division>aside>article{
+        padding-top: 5%;   /*adding more space in the top and bottom of each article in the aside*/
+        padding-bottom: 5%;
+    }
+
+    /*Then, is the code for Contact Page, using class="Index4Body"*/
+
+    .Index4Body h2{
+        line-height: 1.3;
+    }
+
+    .ContactUss >div>form>section{
+        display: block;
+        margin-left: 40px;   /*moving the elements of the form the right*/
+    }
+    .Hasbro > p{
+        margin-left: 1%;  /*adjusting the paragraphs in the Hasbro text*/
+        margin-right: 1%;
+        font-size: 18px;
+
+    }
+
+}
+
+@media screen and (max-width: 320px){      /*7th breakpoint*/
+
+    /*Header and Footer setup*/
+    header > nav > menu{
+
+        padding-left:0px; /*Reducing the space on the left of the navigation menu*/
+    }
+
+    footer div:nth-child(1),
+    footer div:nth-child(2),
+    footer div:nth-child(3){
+        height: 80px;   /*Setting  the height of the footer*/
+        width: auto;
+    }
+
+    footer div:nth-child(2) p{
+        padding-top: 10px;  /*With this I move the text a little to the center of the footer*/
+        font-size: 12px;  /*reducing the fontsize*/
+    }
+
+    /*First, is the code for Home Page, using class="IndexBody"*/
+
+    .IndexBody h1{
+        font-size: 50px; /*reducing the fontsize of the h1*/
+        line-height: 1.2;
+    }
+
+    .Intro >p{
+        font-size: 17px; /*reducing the fontsize of the paragraphs of Intro*/
+    }
+
+    .IndexBody > main >section:nth-child(4)>img{
+        width: 150px; /*reducing the size of the gif from 200 to 150 px*/
+        height:auto;
+    }
+
+    /*Then, is the code for About Page, using class="Index2Body"*/
+
+    .Index2Body>main>section:nth-child(1)>div:nth-child(1)>img{
+        width: 150px; /*reducing the size of the Tiger Logo*/
+        height:auto;
+    }
+
+    .Index2Body>main>section:nth-child(1)>div:nth-child(2)>img{
+        width: 100px;  /*reducing the size of the Hasbro Logo*/
+        height:auto;
+    }
+    .Index2Body h1{
+        font-size: 30px; /*reducing the font size of h1 because the screen is little*/
+        line-height: 1.2;
+    }
+
+    .Index2Body h2{
+        font-size: 25px; /*reducing the font size of h2 because the screen is little*/
+    }
+
+    .Index2Body h3{
+        font-size: 20px; /*reducing the font size of h3 because the screen is little*/
+    }
+
+    .furb >img,
+    .hand >img,
+    .gig >img,
+    .brain >img,
+    .t2>img {
+        width: 210px;  /*reducing the size of the toys*/
+        height:auto;
+    }
+
+
+    /*Then, is the code for Product Page, using class="Index3Body"*/
+
+    .Index3Body h1{
+        font-size: 40px; /*reducing the size of h1*/
+        line-height: 1.5;
+    }
+
+    .Index3Body h2{
+        font-size: 18px; /*reducing the size of h1*/
+        line-height: 1.5;
+    }
+
+    .imageContainer > img{
+        height: 205px;    /*Setting the size of the image */
+        width: 300px;    /*these two values: 410-600  has a similar ratio with the original 650-950*/
+    }
+    /*Then, is the code for Contact Page, using class="Index4Body"*/
+
+    .form> section{
+        width: 200px;  /*reducing the width of the section inside the form */
+    }
+
+    .ContactUss >div:nth-child(2){
+        width: 250px;   /*reducing the size of the image*/
+
+    }
+
+}

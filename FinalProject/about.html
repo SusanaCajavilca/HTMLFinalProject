@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us Page: The Talkboy</title>
+    <!-- The Talkboy was manufactured by Tiger Electronics-->
+    <!-- Years later,Tiger Electronics merged with Hasbro-->
+    <meta name="description" content="This page is the About Company Page for the Final Project.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Here I put the Google Fonts: I choose Bungee Inline, Bungee Shade and Roboto -->
+    <!--  The Bungee font has a 'retro' style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- jQuery link This must be placed before the link to our custom js ... https://releases.jquery.com/ -->
+    <!-- making sure of using the latest version , in this case 3.7.0-->
+    <!-- minified is more efficient and faster, no wide space-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- add our custom js file -->
+    <script type="text/javascript" src="./js/custom-js.js"></script>
+    <!-- Here I add the CSS file, there is only one css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="Index2Body">
+<header id="header"></header>
+<main>
+    <section>
+        <!-- Here I put the 2 logos: Tiger Electronics and Hasbro-->
+        <!-- Also, I put a background opaque image, that part will be in the css file  -->
+        <div>
+            <img src="./img/Tiger_Electronics_logo.png" alt="Logo of Tiger Electronics">
+        </div>
+        <div>
+            <img src="./img/Hasbro_logo.png" alt="Logo of Hasbro">
+        </div>
+
+    </section>
+    <section>
+        <h1>Tiger Electronics  & Hasbro</h1>
+        <!-- Here I put an id because I will use a jquery function, please check it out  -->
+        <h2 id="tored">Our Mission</h2>
+        <p>To entertain and connect generations of fans through the wonder of storytelling and exhilaration of play.</p>
+
+        <!-- Here I put 2 images of products in groups  -->
+        <div>
+        <img src="./img/GeneralToys_1.jpg" alt="Image 1 of some toys together">
+        <img src="./img/GeneralToys_2.jpg" alt="Image 2 of some toys together">
+        </div>
+    </section>
+    <section>
+        <!-- Here I put a  video-->
+        <!-- This 30 -seconds video is advertisement for a toy for Tiger Electronics, it has a vintage style-->
+        <video autoplay muted controls loop>
+            <!-- Using the loop, the video will keep playing forever-->
+            <source src="./vids/TigerElectronics_Ad.mp4" type="video/mp4">
+            Your browser does not support the video
+            <!-- Copyright: Tiger Electronics - source: https://www.youtube.com/watch?v=Rd7dh5Pra-w  -->
+        </video>
+    </section>
+    <section>
+        <!-- Here I put an id because I will use a jquery function, please check it out  -->
+        <h2 id="togreen" >Our Purpose</h2>
+        <p>To create joy and community for all people around the world, one game, one toy, one story at the time.</p>
+    </section>
+    <section>
+        <!-- I am using a plural first person narration style: "we, our..."   -->
+        <!-- Here I put an id because I will use a jquery function, please check it out  -->
+        <h2 id="toblue">Our History</h2>
+        <p>It all started when Gerald Rissman, Randy Rissman and Arnold Rissman founded the company in June 1978. Our headquarters were in Vernon Hills, Illinois. First, our products were low-tech items like phonographs. Then, we began developing handheld electronic games and educational toys. Tiger achieved success with many simple handheld electronics games and titles based on licenses. One of our early 1990s hit was the variable-speed portable cassette player and recorder, the Talkboy (first seen in the 1992 movie Home Alone 2: Lost in New York), but it was not the only successful product   </p>
+        <p>Our success is indebted to the following three factors:</p>
+        <p> <span class="special-text2">Our effective licensing</span>: Tiger people read all the magazines and talked to all the studios to keep on the cutting edge of what's hot with kids. With that, Tiger was able to pursue desirable licenses quickly and aggressively. This allowed them to release licensed games while the properties they were licensed from were still at the peak of their popularity.</p>
+        <p><span class="special-text2">Our low price per game</span>: Tiger handheld games sold for roughly $20 each. By comparison, most handheld games of the time cost over $30, and required a separately sold system (an additional $50 or more) to play it on. So Tigers' products were the most affordable option of the market</p>
+        <p><span class="special-text2">Our simplistic style</span>: Tiger developed addictive gameplays. Kids aged five to twelve years old, found Tigers' toys simple and their mechanics very easy to learn. This was a huge advantage because Tigers' toys  were more appealing to their target than other options.</p>
+        <p>Tiger Electronics has been part of the Hasbro toy company since 1998. Together with Hasbro, we have continued to work towards the same original goal: to design, produce and sell toys that entertains and connect generations of fans through the wonder of storytelling and exhilaration of play. We are proud to be part of a successful multinational conglomerate holding company that is leader in the fields of toys and entertainment. We may have changed our name, but our essence still remains with our compromise to keep our original values and apply the newest market techniques at the same time.</p>
+    </section>
+    <section>
+        <!-- Here I put an id because I will use a jquery function, please check it out  -->
+        <h2 id="towhite">Our most representative products</h2>
+        <p>Tiger Electronics has developed and launched many amazing products. One of our biggest hits was, of course, The Talkboy. But this was not our only successful launching. The following products were also part of our journey to deliver entertaining toys to our younger generations:  </p>
+        <h3>The Furby</h3>
+        <!-- Here I put 1  image of the Furby  -->
+        <div class="furb"><img src="./img/Furby_product.jpg" alt="Furby toy"></div>
+        <p>The Furby is an American electronic robotic toy, originally released in 1998. It resembles a hamster or owllike creature and went through a period of being a "must-have" toy following its holiday season launch, with continual sales until 2000. Over 40 million Furbies were sold during the three years of its original production, with 1.8 million sold in 1998, and 14 million in 1999. Its speaking capabilities were translated into 24 languages.</p>
+        <h3>The HandHeld</h3>
+        <!-- Here I put 1  image of the HandHeld  -->
+        <div class="hand"><img src="./img/HandHeld_product.jpg" alt="HandHeld toy"></div>
+        <p>The Handheld electronic games were interactive-miniaturized versions of video games, that were played on portable handheld devices, known as handheld game consoles, whose controls, display and speakers were all part of a single unit. We were able to secure licenses from many of the time's top  games such as Capcom's Street Fighter II, Sega's Sonic 3D Blast between other games.</p>
+        <h3>The Giga Pet</h3>
+        <!-- Here I put 1  image of the Giga Pet  -->
+        <div class="gig"><img src="./img/GigaPet_product.jpg" alt="GigaPet toy"></div>
+        <p>The Giga Pet is a digital pet toy that was first released in the United States in 1997 in the midst of a virtual-pet toy fad.It was available in a variety of different characters. The Giga Pet was a palm-sized unit with an LCD screen and attached key ring. To ensure a happy, healthy pet, its owner had to take care of it similar to how one might care for a real animal, including feeding, cleaning, and playing with their Giga Pet.</p>
+        <h3>The Brain Warp</h3>
+        <!-- Here I put 1  image of the Brain Warp  -->
+        <div class="brain"><img src="./img/BrainWarp_product.jpg" alt="BrainWrap toy"></div>
+        <p>The Brain Warp is an electronic audio game which was manufactured and published and released on 1996. In this game, players follow the spoken instructions from sound files spoken from the game unit. The player has to rotate the game in different directions so that the correct color is facing upwards. Its catchphrase which the voice says before a game begins is: "If you don't keep up with me, you're finished!"</p>
+        <h3>The 2-XL</h3>
+        <!-- Here I put 1  image of the T2-XL toy  -->
+        <div class="t2"><img src="./img/T2_XL_product.jpg" alt="T2-XL toy"></div>
+        <p>The 2-XL Robot is an educational toy robot that was marketed from 1992 to 1995 . The 2-XL was the first "smart-toy" in the world that exhibited rudimentary intelligence, memory, gameplay, and responsiveness. 2-XL was infused with a "personality" that kept kids focused and challenged as they interacted with the verbal robot. </p>
+
+    </section>
+
+</main>
+<footer id="footer"></footer>
+</body>
+</html>
